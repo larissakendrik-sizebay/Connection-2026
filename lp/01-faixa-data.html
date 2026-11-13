@@ -8,11 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
 
 <style>
+  html,body{overflow-x:hidden}
   .cx-faixa{
     --cx-branco:#F5F5F9; --cx-azul:#0064FD; --cx-roxo:#7727F0; --cx-magenta:#F9039B; --cx-ciano:#00D3FD;
     --cx-altura:64px; --cx-fonte:22px; --cx-gap:40px; --cx-brilho:35px;
     --cx-velocidade:45s;               /* tempo de uma volta completa: maior = mais lento */
-    position:relative; width:100%; height:var(--cx-altura); overflow:hidden;
+    position:relative; box-sizing:border-box; width:100vw; max-width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw);
+    height:var(--cx-altura); overflow:hidden;
     display:flex; align-items:center;
     background:linear-gradient(90deg,var(--cx-azul) 0%,var(--cx-roxo) 25%,var(--cx-magenta) 50%,var(--cx-roxo) 75%,var(--cx-azul) 100%);
     background-size:200% 100%;
