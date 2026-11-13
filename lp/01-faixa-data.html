@@ -1,0 +1,106 @@
+<!-- =========================================================
+     CONNECTION 2027 · Bloco 01 — Faixa data (letreiro animado)
+     Figma: node 648:18631 (Landing page › Frame 26)
+     Colar como bloco HTML no RD Station. Autocontido.
+     ========================================================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+
+<style>
+  .cx-faixa{
+    --cx-branco:#F5F5F9; --cx-azul:#0064FD; --cx-roxo:#7727F0; --cx-magenta:#F9039B; --cx-ciano:#00D3FD;
+    --cx-altura:64px; --cx-fonte:22px; --cx-gap:40px; --cx-brilho:35px;
+    --cx-velocidade:45s;               /* tempo de uma volta completa: maior = mais lento */
+    position:relative; width:100%; height:var(--cx-altura); overflow:hidden;
+    display:flex; align-items:center;
+    background:linear-gradient(90deg,var(--cx-azul) 0%,var(--cx-roxo) 25%,var(--cx-magenta) 50%,var(--cx-roxo) 75%,var(--cx-azul) 100%);
+    background-size:200% 100%;
+    animation:cx-fluxo 12s ease-in-out infinite alternate;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* reflexo de luz que atravessa a faixa */
+  .cx-faixa::after{
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background:linear-gradient(100deg,transparent 35%,rgba(255,255,255,.18) 50%,transparent 65%);
+    transform:translateX(-100%);
+    animation:cx-reflexo 7s ease-in-out infinite;
+  }
+  .cx-faixa__trilho{
+    display:flex; flex-shrink:0; width:max-content;
+    animation:cx-letreiro var(--cx-velocidade) linear infinite;
+  }
+  .cx-faixa:hover .cx-faixa__trilho{animation-play-state:paused}
+  .cx-faixa__grupo{display:flex; align-items:center; gap:var(--cx-gap); padding-right:var(--cx-gap); flex-shrink:0}
+  .cx-faixa__item{
+    margin:0; white-space:nowrap; color:var(--cx-branco);
+    font:700 var(--cx-fonte)/1 'Chakra Petch',sans-serif; letter-spacing:.08em; text-transform:uppercase;
+  }
+  .cx-faixa__brilho{
+    width:var(--cx-brilho); height:var(--cx-brilho); flex-shrink:0; color:#fff;
+    filter:drop-shadow(0 0 2.5px rgba(0,211,253,.5));
+    animation:cx-pisca 2.4s ease-in-out infinite;
+  }
+  .cx-faixa__brilho:nth-of-type(3n+2){animation-delay:-.8s}
+  .cx-faixa__brilho:nth-of-type(3n){animation-delay:-1.6s}
+
+  @keyframes cx-letreiro{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes cx-fluxo{from{background-position:0% 0}to{background-position:100% 0}}
+  @keyframes cx-reflexo{0%,60%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+  @keyframes cx-pisca{
+    0%,100%{transform:scale(.85); opacity:.75; filter:drop-shadow(0 0 2px rgba(0,211,253,.4))}
+    50%{transform:scale(1.1); opacity:1; filter:drop-shadow(0 0 8px rgba(0,211,253,.95)) drop-shadow(0 0 2px #fff)}
+  }
+
+  /* Mobile */
+  @media (max-width:767px){
+    .cx-faixa{--cx-altura:44px; --cx-fonte:14px; --cx-gap:20px; --cx-brilho:20px; --cx-velocidade:32s}
+  }
+
+  /* Acessibilidade: quem pede menos movimento vê a faixa parada */
+  @media (prefers-reduced-motion:reduce){
+    .cx-faixa,.cx-faixa::after,.cx-faixa__trilho,.cx-faixa__brilho{animation:none}
+    .cx-faixa::after{display:none}
+  }
+</style>
+
+<div class="cx-faixa" role="region" aria-label="Data e local do evento">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="cx-brilho" viewBox="0 0 34 34">
+      <path fill="currentColor" d="M16 0h2v2h-2zM16 2h2v2h-2zM16 4h2v2h-2zM14 7h2v2h-2zM19 7h2v2h-2zM14 9h2v2h-2zM19 9h2v2h-2zM12 11h2v2h-2zM21 11h2v2h-2zM7 14h2v2h-2zM9 14h2v2h-2zM23 14h2v2h-2zM25 14h2v2h-2zM0 16h2v2h-2zM2 16h2v2h-2zM5 16h2v2h-2zM28 16h2v2h-2zM30 16h2v2h-2zM32 16h2v2h-2zM7 18h2v2h-2zM9 18h2v2h-2zM23 18h2v2h-2zM25 18h2v2h-2zM12 20h2v2h-2zM21 20h2v2h-2zM14 23h2v2h-2zM19 23h2v2h-2zM14 25h2v2h-2zM19 25h2v2h-2zM16 27h2v2h-2zM16 30h2v2h-2zM16 32h2v2h-2z"/>
+    </symbol>
+  </svg>
+
+  <div class="cx-faixa__trilho">
+    <!-- Grupo lido por leitores de tela -->
+    <div class="cx-faixa__grupo">
+      <p class="cx-faixa__item">07 e 08 de janeiro de 2027</p>
+      <svg class="cx-faixa__brilho" aria-hidden="true"><use href="#cx-brilho"/></svg>
+      <p class="cx-faixa__item">Auditório da FIESC, Florianópolis</p>
+      <svg class="cx-faixa__brilho" aria-hidden="true"><use href="#cx-brilho"/></svg>
+      <p class="cx-faixa__item" aria-hidden="true">07 e 08 de janeiro de 2027</p>
+      <svg class="cx-faixa__brilho" aria-hidden="true"><use href="#cx-brilho"/></svg>
+      <p class="cx-faixa__item" aria-hidden="true">Auditório da FIESC, Florianópolis</p>
+      <svg class="cx-faixa__brilho" aria-hidden="true"><use href="#cx-brilho"/></svg>
+      <p class="cx-faixa__item" aria-hidden="true">07 e 08 de janeiro de 2027</p>
+      <svg class="cx-faixa__brilho" aria-hidden="true"><use href="#cx-brilho"/></svg>
+      <p class="cx-faixa__item" aria-hidden="true">Auditório da FIESC, Florianópolis</p>
+      <svg class="cx-faixa__brilho" aria-hidden="true"><use href="#cx-brilho"/></svg>
+    </div>
+    <!-- Cópia idêntica para o loop sem emenda -->
+    <div class="cx-faixa__grupo" aria-hidden="true">
+      <p class="cx-faixa__item">07 e 08 de janeiro de 2027</p>
+      <svg class="cx-faixa__brilho"><use href="#cx-brilho"/></svg>
+      <p class="cx-faixa__item">Auditório da FIESC, Florianópolis</p>
+      <svg class="cx-faixa__brilho"><use href="#cx-brilho"/></svg>
+      <p class="cx-faixa__item">07 e 08 de janeiro de 2027</p>
+      <svg class="cx-faixa__brilho"><use href="#cx-brilho"/></svg>
+      <p class="cx-faixa__item">Auditório da FIESC, Florianópolis</p>
+      <svg class="cx-faixa__brilho"><use href="#cx-brilho"/></svg>
+      <p class="cx-faixa__item">07 e 08 de janeiro de 2027</p>
+      <svg class="cx-faixa__brilho"><use href="#cx-brilho"/></svg>
+      <p class="cx-faixa__item">Auditório da FIESC, Florianópolis</p>
+      <svg class="cx-faixa__brilho"><use href="#cx-brilho"/></svg>
+    </div>
+  </div>
+</div>
