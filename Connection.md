@@ -57,6 +57,8 @@
 | **Blackfully** | Italic (licença *Personal Use*) | O "2027" em brush/caligrafia do logo. ⚠️ Licença pessoal: verificar a licença comercial antes de usar em produção. |
 | **Chakra Petch** | Regular, Medium, Bold, Bold Italic | Textos de apoio, datas, local, "LOADING...", "EM BREVE MAIS INFORMAÇÕES" |
 
+**Na web (LP):** a QB One ExtraBold Expanded vai embutida no HTML (WOFF2 gerado a partir da QB One Variable, em `lp/assets/fontes/`). Como a fonte não tem itálico, a inclinação dos títulos é feita via CSS (`skewX(-11deg)`).
+
 Os textos de apoio combinam pesos (ex.: "Há **35 anos** transformando a **indústria da moda**").
 
 ---
