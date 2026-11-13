@@ -194,8 +194,8 @@
   .cx-hero__globo{
     position:absolute; left:50%; bottom:0; z-index:0; pointer-events:none;
     width:min(1205px,125vw); aspect-ratio:1205/280; transform:translateX(-50%); opacity:.6;
-    -webkit-mask-image:linear-gradient(#000 35%,transparent 95%);
-            mask-image:linear-gradient(#000 35%,transparent 95%);
+    -webkit-mask-image:linear-gradient(#000 25%,transparent 74%);
+            mask-image:linear-gradient(#000 25%,transparent 74%);
   }
   .cx-hero__globo canvas{display:block; width:100%; height:100%}
   @media (min-width:768px){ .cx-hero__globo{transform:translateX(-50%) translateY(25px)} }
@@ -571,8 +571,7 @@
     -webkit-mask-image:linear-gradient(transparent 0%,#000 14%,#000 82%,transparent 100%); mask-image:linear-gradient(transparent 0%,#000 14%,#000 82%,transparent 100%)}
   .cx-prog__brilhos span{position:absolute; border-radius:50%; filter:blur(10px); animation:cx-p-respira 10s ease-in-out infinite alternate}
   .cx-prog__brilhos .b1{left:-20%; top:15%; width:50%; height:70%; background:radial-gradient(closest-side,rgba(0,100,253,.55),rgba(0,100,253,.15) 60%,transparent)}
-  .cx-prog__brilhos .b2{right:-18%; bottom:-10%; width:50%; height:70%; background:radial-gradient(closest-side,rgba(249,3,155,.32),rgba(119,39,240,.2) 60%,transparent); animation-delay:-4s}
-  .cx-prog__brilhos .b3{left:30%; top:4%; width:40%; height:40%; background:radial-gradient(closest-side,rgba(0,100,253,.18),transparent); animation-delay:-7s}
+  .cx-prog__brilhos .b2{right:-35%; bottom:-15%; width:85%; height:95%; filter:blur(60px); background:radial-gradient(closest-side,rgba(249,3,155,.2),rgba(119,39,240,.14) 40%,rgba(119,39,240,.05) 70%,transparent); animation-delay:-4s}
   .cx-prog__ruido{position:absolute; inset:0; z-index:3; pointer-events:none; opacity:.07; mix-blend-mode:overlay;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 
@@ -659,7 +658,7 @@
 </style>
 
 <section class="cx-prog" id="cx-prog" aria-labelledby="cx-prog-titulo">
-  <div class="cx-prog__brilhos" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="cx-prog__brilhos" aria-hidden="true"><span class="b1"></span><span class="b2"></span></div>
   <div class="cx-prog__ruido" aria-hidden="true"></div>
 
   <h2 class="cx-prog__titulo" id="cx-prog-titulo" data-cx-revela><span>Programação</span></h2>
