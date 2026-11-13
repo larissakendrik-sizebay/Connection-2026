@@ -3,6 +3,9 @@
 > Fonte: Figma, arquivo **Connection 2027**, página **KV**
 > https://www.figma.com/design/S9qABGwk7yIfxLNVkXpTqu/Connection-2027?node-id=6-43
 
+> **Fonte única da verdade:** o arquivo do Figma acima é a identidade **final** do Connection. Toda peça, texto ou código deve seguir sempre o Figma. Se este MD divergir do arquivo, vale o Figma, e o MD deve ser atualizado.
+> Conferido em 13/11/2026: cores principais, estrutura de frames e peças batem com o Figma.
+
 **Evento:** Audaces Connection 2027 · 7 e 8 de janeiro · Auditório da FIESC, Florianópolis
 **Conceito:** os 35 anos da Audaces em uma estética retrô-tech/synthwave. Fundo azul-marinho profundo, grid neon em perspectiva, globo wireframe, ícones em pixel art, glitch e ruído, com gradiente ciano → azul → roxo → magenta.
 
