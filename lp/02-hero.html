@@ -80,9 +80,9 @@
   /* ---------- Globo (canvas) ---------- */
   .cx-hero__globo{
     position:absolute; left:50%; bottom:0; z-index:0; pointer-events:none;
-    width:min(1205px,125vw); aspect-ratio:1205/280; transform:translateX(-50%);
-    -webkit-mask-image:linear-gradient(#000 55%,transparent 100%);
-            mask-image:linear-gradient(#000 55%,transparent 100%);
+    width:min(1205px,125vw); aspect-ratio:1205/280; transform:translateX(-50%); opacity:.6;
+    -webkit-mask-image:linear-gradient(#000 35%,transparent 95%);
+            mask-image:linear-gradient(#000 35%,transparent 95%);
   }
   .cx-hero__globo canvas{display:block; width:100%; height:100%}
 
@@ -378,7 +378,7 @@
     atm.addColorStop(0,'rgba(0,100,253,0)'); atm.addColorStop(1,'rgba(0,100,253,.22)');
     ctx.fillStyle = atm; ctx.beginPath(); ctx.arc(CX,CY,R,0,Math.PI*2); ctx.fill();
     // grade
-    ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(0,211,253,.38)';
+    ctx.lineWidth = 1; ctx.strokeStyle = 'rgba(0,211,253,.28)';
     ctx.shadowColor = 'rgba(0,211,253,.5)'; ctx.shadowBlur = 4;
     var lat, lon, pts, i;
     for(lat=-75; lat<=75; lat+=15){
