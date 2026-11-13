@@ -25,11 +25,12 @@
   .cx-prog *,.cx-prog *::before,.cx-prog *::after{box-sizing:border-box}
 
   /* Fundo */
-  .cx-prog__brilhos{position:absolute; inset:0; z-index:-2; pointer-events:none}
+  .cx-prog__brilhos{position:absolute; inset:0; z-index:-2; pointer-events:none;
+    -webkit-mask-image:linear-gradient(transparent 0%,#000 14%,#000 82%,transparent 100%); mask-image:linear-gradient(transparent 0%,#000 14%,#000 82%,transparent 100%)}
   .cx-prog__brilhos span{position:absolute; border-radius:50%; filter:blur(10px); animation:cx-p-respira 10s ease-in-out infinite alternate}
   .cx-prog__brilhos .b1{left:-20%; top:15%; width:50%; height:70%; background:radial-gradient(closest-side,rgba(0,100,253,.55),rgba(0,100,253,.15) 60%,transparent)}
   .cx-prog__brilhos .b2{right:-18%; bottom:-10%; width:50%; height:70%; background:radial-gradient(closest-side,rgba(249,3,155,.32),rgba(119,39,240,.2) 60%,transparent); animation-delay:-4s}
-  .cx-prog__brilhos .b3{left:30%; top:-15%; width:40%; height:40%; background:radial-gradient(closest-side,rgba(0,100,253,.18),transparent); animation-delay:-7s}
+  .cx-prog__brilhos .b3{left:30%; top:4%; width:40%; height:40%; background:radial-gradient(closest-side,rgba(0,100,253,.18),transparent); animation-delay:-7s}
   .cx-prog__ruido{position:absolute; inset:0; z-index:3; pointer-events:none; opacity:.07; mix-blend-mode:overlay;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 

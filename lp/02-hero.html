@@ -31,7 +31,7 @@
   .cx-hero *,.cx-hero *::before,.cx-hero *::after{box-sizing:border-box}
 
   /* ---------- Fundo: brilhos, grade, quadrados, ruído ---------- */
-  .cx-hero__brilhos{position:absolute; inset:0; z-index:-3; pointer-events:none}
+  .cx-hero__brilhos{position:absolute; inset:0; z-index:-3; pointer-events:none; -webkit-mask-image:linear-gradient(#000 0%,#000 62%,transparent 96%); mask-image:linear-gradient(#000 0%,#000 62%,transparent 96%);}
   .cx-hero__brilhos span{position:absolute; border-radius:50%; filter:blur(10px); animation:cx-respira 9s ease-in-out infinite alternate}
   .cx-hero__brilhos .b1{left:-22%; top:35%; width:55%; height:90%;
     background:radial-gradient(closest-side,rgba(0,100,253,.75),rgba(0,100,253,.25) 55%,transparent)}
@@ -49,23 +49,25 @@
       linear-gradient(90deg,rgba(0,100,253,.9) 1.5px,transparent 1.5px);
     background-size:62px 62px;
     opacity:.6;
-    -webkit-mask-image:radial-gradient(ellipse 100% 75% at var(--cx-mx) 25%,#000 15%,transparent 75%);
-            mask-image:radial-gradient(ellipse 100% 75% at var(--cx-mx) 25%,#000 15%,transparent 75%);
+    -webkit-mask-image:radial-gradient(ellipse 100% 75% at var(--cx-mx) 25%,#000 15%,transparent 75%),linear-gradient(#000 55%,transparent 90%);
+    -webkit-mask-composite:source-in;
+            mask-image:radial-gradient(ellipse 100% 75% at var(--cx-mx) 25%,#000 15%,transparent 75%),linear-gradient(#000 55%,transparent 90%);
+            mask-composite:intersect;
     animation:cx-grade 14s linear infinite;
   }
   .cx-hero__parede--esq{left:0; --cx-mx:0%}
   .cx-hero__parede--dir{right:0; --cx-mx:100%}
 
-  .cx-hero__quadrados{position:absolute; inset:0; z-index:-1; pointer-events:none}
+  .cx-hero__quadrados{position:absolute; inset:0; z-index:-1; pointer-events:none; -webkit-mask-image:linear-gradient(#000 0%,#000 62%,transparent 96%); mask-image:linear-gradient(#000 0%,#000 62%,transparent 96%);}
   .cx-hero__quadrados i{
     position:absolute; width:var(--q,55px); height:var(--q,55px); background:var(--cx-azul);
     box-shadow:0 0 30px rgba(0,100,253,.85);
     animation:cx-pisca-q 4s steps(1) infinite;
   }
-  .cx-hero__quadrados .q1{left:var(--q,55px); top:calc(var(--q,55px)*12.4)}
-  .cx-hero__quadrados .q2{left:0; top:calc(var(--q,55px)*13.4)}
-  .cx-hero__quadrados .q3{left:calc(var(--q,55px)*2); top:calc(var(--q,55px)*13.4)}
-  .cx-hero__quadrados .q4{left:0; top:calc(var(--q,55px)*15.4)}
+  .cx-hero__quadrados .q1{left:var(--q,55px); top:calc(var(--q,55px)*10.6)}
+  .cx-hero__quadrados .q2{left:0; top:calc(var(--q,55px)*11.6)}
+  .cx-hero__quadrados .q3{left:calc(var(--q,55px)*2); top:calc(var(--q,55px)*11.6)}
+  .cx-hero__quadrados .q4{left:0; top:calc(var(--q,55px)*13.6)}
   .cx-hero__quadrados .q5{right:calc(var(--q,55px)*2); top:0}
   .cx-hero__quadrados .q6{right:var(--q,55px); top:var(--q,55px)}
   .cx-hero__quadrados .q7{right:0; top:calc(var(--q,55px)*2)}
@@ -213,7 +215,8 @@
     .cx-crono__rotulo{font-size:12px; letter-spacing:.06em}
     .cx-crono__sep{gap:7px; padding-top:calc(clamp(32px,9.6vw,46px)*.3)}
     .cx-crono__sep i{width:6px; height:6px}
-    .cx-hero__globo{width:170vw; aspect-ratio:1205/330; bottom:-86px}
+    .cx-hero__globo{width:170vw; aspect-ratio:1205/330; bottom:-86px;
+      -webkit-mask-image:linear-gradient(#000 22%,transparent 56%); mask-image:linear-gradient(#000 22%,transparent 56%)}
   }
 
   @media (max-width:380px){
