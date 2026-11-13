@@ -761,7 +761,10 @@
   /* card final */
   .cx-pais__card{position:relative; z-index:2; width:min(1097px,100%); display:flex; align-items:center; justify-content:space-between; gap:28px;
     padding:44px 44px 44px 66px; border-radius:23px; background:rgba(255,255,255,.08);
-    -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); box-shadow:0 0 18px rgba(119,39,240,.6)}
+    -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px); box-shadow:0 0 18px rgba(119,39,240,.6);
+    transition:transform .45s var(--cx-ease),box-shadow .45s var(--cx-ease),background .45s var(--cx-ease)}
+  .cx-pais__card:hover{transform:translateY(-4px); background:rgba(255,255,255,.1);
+    box-shadow:0 0 22px rgba(119,39,240,.7),0 14px 44px rgba(249,3,155,.22),0 6px 30px rgba(0,211,253,.14)}
   .cx-pais__card::before{content:""; position:absolute; inset:0; border-radius:inherit; padding:1.5px; pointer-events:none;
     background:linear-gradient(330deg,#F5F5F9 0%,#0064FD 40%,#fff 72%,#F9039B 100%);
     -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); -webkit-mask-composite:xor;
@@ -789,8 +792,9 @@
   .cx-pais .cx-cta:focus-visible{outline:3px solid #00D3FD; outline-offset:4px}
   @keyframes cx-p-seta{0%{opacity:1}33%{opacity:.25}}
   @keyframes cx-p-reflexo{0%,55%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
-  .cx-pais.cx-js .cx-pais__card{opacity:0; transform:translateY(32px); transition:opacity .9s var(--cx-ease) .5s,transform .9s var(--cx-ease) .5s}
-  .cx-pais.cx-js.is-visivel .cx-pais__card{opacity:1; transform:none}
+  .cx-pais.cx-js .cx-pais__card{opacity:0}
+  .cx-pais.cx-js.is-visivel .cx-pais__card{opacity:1; animation:cx-p-sobe .9s var(--cx-ease) .5s backwards}
+  @keyframes cx-p-sobe{from{opacity:0; transform:translateY(32px)}to{opacity:1; transform:none}}
   /* entrada */
   .cx-pais.cx-js .cx-pais__img{opacity:0; transform:scale(1.08); transition:opacity 1.4s var(--cx-ease),transform 1.8s var(--cx-ease)}
   .cx-pais.cx-js.is-visivel .cx-pais__img{opacity:1; transform:none}
