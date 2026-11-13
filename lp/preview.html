@@ -223,12 +223,12 @@
   }
   .cx-cta::before{ /* reflexo que passa */
     content:""; position:absolute; inset:0; pointer-events:none;
-    background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);
+    background:linear-gradient(100deg,transparent 35%,rgba(255,255,255,.16) 50%,transparent 65%);
     transform:translateX(-120%); animation:cx-reflexo-cta 4.5s var(--cx-ease) infinite 2s;
   }
   .cx-cta svg{width:28px; height:28px; flex-shrink:0; filter:drop-shadow(0 0 2px rgba(0,211,253,.6))}
   .cx-cta svg path{animation:none}
-  .cx-cta:hover,.cx-cta:focus-visible{background-position:100% 0; box-shadow:0 0 28px rgba(0,211,253,.55),0 0 60px rgba(249,3,155,.35)}
+  .cx-cta:hover,.cx-cta:focus-visible{background-position:100% 0; box-shadow:0 0 18px rgba(0,100,253,.35),0 0 40px rgba(249,3,155,.18)}
   .cx-cta:hover svg .s1,.cx-cta:focus-visible svg .s1{animation:cx-seta 0.9s steps(1) infinite}
   .cx-cta:hover svg .s2,.cx-cta:focus-visible svg .s2{animation:cx-seta 0.9s steps(1) infinite .3s}
   .cx-cta:hover svg .s3,.cx-cta:focus-visible svg .s3{animation:cx-seta 0.9s steps(1) infinite .6s}
