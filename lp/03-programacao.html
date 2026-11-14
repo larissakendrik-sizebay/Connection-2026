@@ -94,7 +94,7 @@
     -webkit-mask-composite:source-in;
             mask-image:radial-gradient(ellipse 130% 85% at var(--cx-mx) 65%,#000 25%,transparent 80%),linear-gradient(0deg,transparent 3%,#000 14%,#000 60%,transparent 98%);
             mask-composite:intersect;
-    animation:cx-grade-sobe 14s linear infinite}
+    animation:cx-grade-sobe 8s linear infinite}
   .cx-prog__parede--esq{left:0; --cx-mx:0%}
   .cx-prog__parede--dir{right:0; --cx-mx:100%}
   @keyframes cx-grade-sobe-m{from{background-position:0 100%}to{background-position:0 calc(100% - 36px)}}
@@ -155,7 +155,7 @@
   /* Mobile */
   @media (max-width:767px){
     .cx-prog{padding-bottom:72px !important}
-    .cx-prog__parede{width:45%; height:460px; opacity:.35; background-size:36px 36px; animation-name:cx-grade-sobe-m}
+    .cx-prog__parede{width:45%; height:460px; opacity:.35; background-size:36px 36px; animation-name:cx-grade-sobe-m; animation-duration:4.6s}
     .cx-prog__final{flex-direction:column; text-align:center; gap:24px; margin-top:40px; padding:32px 18px; border-radius:18px}
     .cx-prog__final-titulo{font-size:clamp(20px,calc((100vw - 104px)/11.5),28px)}
     .cx-prog__final-titulo br{display:none}

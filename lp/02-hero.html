@@ -54,7 +54,7 @@
     -webkit-mask-composite:source-in;
             mask-image:radial-gradient(ellipse 100% 75% at var(--cx-mx) 25%,#000 15%,transparent 75%),linear-gradient(#000 55%,transparent 90%);
             mask-composite:intersect;
-    animation:cx-grade 14s linear infinite;
+    animation:cx-grade 8s linear infinite;
   }
   .cx-hero__parede--esq{left:0; --cx-mx:0%}
   .cx-hero__parede--dir{right:0; --cx-mx:100%}
@@ -175,6 +175,7 @@
   @keyframes cx-entra{from{opacity:0; transform:translateY(24px)}to{opacity:1; transform:none}}
   @keyframes cx-respira{from{opacity:.7; transform:scale(1)}to{opacity:1; transform:scale(1.08)}}
   @keyframes cx-grade{from{background-position:0 0}to{background-position:0 62px}}
+  @keyframes cx-grade-m{from{background-position:0 0}to{background-position:0 36px}}
   @keyframes cx-pisca-q{0%,100%{opacity:1}12%{opacity:.35}16%{opacity:1}55%{opacity:.6}58%{opacity:1}}
   @keyframes cx-flutua{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
   @keyframes cx-tick{
@@ -204,7 +205,7 @@
     .cx-cta{width:100%; justify-content:center; min-height:56px; padding:18px 20px; font-size:clamp(13px,3.9vw,15px); letter-spacing:.06em; white-space:nowrap}
     .cx-icone--audaces{left:calc(50% - 170px); top:148px; width:52px}
     .cx-icone--carinha{left:calc(50% + 118px); right:auto; top:152px; width:52px}
-    .cx-hero__parede{width:45%; height:60%; background-size:36px 36px}
+    .cx-hero__parede{width:45%; height:60%; background-size:36px 36px; animation:cx-grade-m 4.6s linear infinite}
     .cx-hero__quadrados{--q:22px}
     .cx-hero__quadrados .q1,.cx-hero__quadrados .q2,.cx-hero__quadrados .q3,.cx-hero__quadrados .q4{display:none}
     .cx-crono{gap:4px; margin-top:48px; padding-bottom:64px; max-width:400px}
