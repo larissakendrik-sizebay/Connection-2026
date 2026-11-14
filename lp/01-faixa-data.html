@@ -11,7 +11,7 @@
   html,body{overflow-x:hidden}
   .cx-faixa{
     --cx-branco:#F5F5F9; --cx-azul:#0064FD; --cx-roxo:#7727F0; --cx-magenta:#F9039B; --cx-ciano:#00D3FD;
-    --cx-altura:64px; --cx-fonte:22px; --cx-gap:40px; --cx-brilho:35px;
+    --cx-altura:48px; --cx-fonte:16px; --cx-gap:32px; --cx-brilho:24px;
     --cx-velocidade:45s;               /* tempo de uma volta completa: maior = mais lento */
     position:relative; box-sizing:border-box; width:100vw; max-width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw);
     height:var(--cx-altura); overflow:hidden;
@@ -30,9 +30,9 @@
   }
   .cx-faixa__trilho{
     display:flex; flex-shrink:0; width:max-content;
-    animation:cx-letreiro var(--cx-velocidade) linear infinite;
+    animation:cx-letreiro var(--cx-velocidade) linear infinite; will-change:transform; backface-visibility:hidden;
   }
-  .cx-faixa:hover .cx-faixa__trilho{animation-play-state:paused}
+  @media (hover:hover) and (pointer:fine){ .cx-faixa:hover .cx-faixa__trilho{animation-play-state:paused} }
   .cx-faixa__grupo{display:flex; align-items:center; gap:var(--cx-gap); padding-right:var(--cx-gap); flex-shrink:0}
   .cx-faixa__item{
     margin:0; white-space:nowrap; color:var(--cx-branco);
@@ -46,7 +46,7 @@
   .cx-faixa__brilho:nth-of-type(3n+2){animation-delay:-.8s}
   .cx-faixa__brilho:nth-of-type(3n){animation-delay:-1.6s}
 
-  @keyframes cx-letreiro{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes cx-letreiro{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
   @keyframes cx-fluxo{from{background-position:0% 0}to{background-position:100% 0}}
   @keyframes cx-reflexo{0%,60%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
   @keyframes cx-pisca{
@@ -56,7 +56,7 @@
 
   /* Mobile */
   @media (max-width:767px){
-    .cx-faixa{--cx-altura:44px; --cx-fonte:14px; --cx-gap:20px; --cx-brilho:20px; --cx-velocidade:32s}
+    .cx-faixa{--cx-altura:38px; --cx-fonte:12px; --cx-gap:18px; --cx-brilho:16px; --cx-velocidade:32s}
   }
 
   /* Acessibilidade: quem pede menos movimento vê a faixa parada */
