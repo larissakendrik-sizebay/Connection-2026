@@ -83,16 +83,16 @@
 
   /* chão em grade (perspectiva synthwave, animado) */
   .cx-prog__chao{position:absolute; left:0; right:0; bottom:0; height:48%; z-index:-1; pointer-events:none; overflow:hidden;
-    perspective:420px; perspective-origin:50% 0%; opacity:.5;
-    -webkit-mask-image:linear-gradient(transparent 0%,#000 28%,#000 80%,transparent 100%);
-            mask-image:linear-gradient(transparent 0%,#000 28%,#000 80%,transparent 100%)}
+    perspective:420px; perspective-origin:50% 0%; opacity:.42;
+    -webkit-mask-image:linear-gradient(transparent 0%,transparent 22%,rgba(0,0,0,.18) 45%,rgba(0,0,0,.55) 68%,#000 86%,transparent 100%);
+            mask-image:linear-gradient(transparent 0%,transparent 22%,rgba(0,0,0,.18) 45%,rgba(0,0,0,.55) 68%,#000 86%,transparent 100%)}
   .cx-prog__chao::before{content:""; position:absolute; left:-80%; right:-80%; bottom:0; height:260%;
-    transform-origin:50% 100%; transform:rotateX(72deg);
+    transform-origin:50% 100%; transform:rotateX(72deg); will-change:transform; backface-visibility:hidden;
     background-image:linear-gradient(rgba(0,100,253,.95) 2px,transparent 2px),linear-gradient(90deg,rgba(0,100,253,.95) 2px,transparent 2px);
-    background-size:96px 96px; animation:cx-chao 2.6s linear infinite}
+    background-size:96px 96px; animation:cx-chao 9s linear infinite}
   .cx-prog__chao::after{content:""; position:absolute; inset:0; background:radial-gradient(ellipse 60% 40% at 50% 40%,rgba(0,100,253,.25),transparent 70%)}
-  @keyframes cx-chao{from{background-position:0 0}to{background-position:0 96px}}
-  @keyframes cx-chao-m{from{background-position:0 0}to{background-position:0 56px}}
+  @keyframes cx-chao{from{transform:rotateX(72deg) translate3d(0,0,0)}to{transform:rotateX(72deg) translate3d(0,96px,0)}}
+  @keyframes cx-chao-m{from{transform:rotateX(72deg) translate3d(0,0,0)}to{transform:rotateX(72deg) translate3d(0,56px,0)}}
 
   /* card final */
   .cx-prog__final{position:relative; z-index:1; max-width:1090px; margin:78px auto 0; display:flex; align-items:center; justify-content:space-between; gap:28px;
