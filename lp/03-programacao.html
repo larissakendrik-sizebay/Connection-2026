@@ -84,15 +84,15 @@
 
   /* chão em grade (perspectiva synthwave, animado) */
   .cx-prog__parede{
-    position:absolute; bottom:0; height:1000px; width:max(calc(50% - 545px),120px); z-index:-1; pointer-events:none;
+    position:absolute; bottom:0; height:1000px; width:42%; z-index:-1; pointer-events:none;
     background-image:
       linear-gradient(rgba(0,100,253,.9) 1.5px,transparent 1.5px),
       linear-gradient(90deg,rgba(0,100,253,.9) 1.5px,transparent 1.5px);
     background-size:62px 62px; background-position:0 100%;
     opacity:.6;
-    -webkit-mask-image:radial-gradient(ellipse 130% 100% at var(--cx-mx) 100%,#000 35%,transparent 85%),linear-gradient(0deg,#000 0%,#000 60%,transparent 98%);
+    -webkit-mask-image:radial-gradient(ellipse 100% 110% at var(--cx-mx) 100%,#000 22%,rgba(0,0,0,.45) 42%,transparent 62%),linear-gradient(0deg,#000 0%,#000 60%,transparent 98%);
     -webkit-mask-composite:source-in;
-            mask-image:radial-gradient(ellipse 130% 100% at var(--cx-mx) 100%,#000 35%,transparent 85%),linear-gradient(0deg,#000 0%,#000 60%,transparent 98%);
+            mask-image:radial-gradient(ellipse 100% 110% at var(--cx-mx) 100%,#000 22%,rgba(0,0,0,.45) 42%,transparent 62%),linear-gradient(0deg,#000 0%,#000 60%,transparent 98%);
             mask-composite:intersect;
     animation:cx-grade-sobe 8s linear infinite}
   .cx-prog__parede--esq{left:0; --cx-mx:0%}
