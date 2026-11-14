@@ -14,7 +14,8 @@
     --cx-altura:48px; --cx-fonte:16px; --cx-gap:32px; --cx-brilho:24px;
     --cx-velocidade:45s;               /* tempo de uma volta completa: maior = mais lento */
     position:relative; box-sizing:border-box; width:100vw; max-width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw);
-    height:var(--cx-altura); overflow:hidden;
+    height:var(--cx-altura); overflow:hidden; z-index:5; margin-bottom:-1px;
+    box-shadow:0 6px 0 0 #090F2B; /* cobre qualquer espaço branco entre a faixa e o bloco de baixo */
     display:flex; align-items:center;
     background:linear-gradient(90deg,var(--cx-azul) 0%,var(--cx-roxo) 25%,var(--cx-magenta) 50%,var(--cx-roxo) 75%,var(--cx-azul) 100%);
     background-size:200% 100%;
