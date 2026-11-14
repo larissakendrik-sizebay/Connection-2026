@@ -19,7 +19,7 @@
     --cx-ease:cubic-bezier(.2,.8,.2,1); --cx-fonte:'Chakra Petch',sans-serif;
     position:relative; overflow:hidden; isolation:isolate; box-sizing:border-box;
     width:100vw; max-width:100vw; margin-left:calc(50% - 50vw); margin-right:calc(50% - 50vw);
-    padding:96px 24px 300px; background:var(--cx-navy); color:var(--cx-branco); font-family:var(--cx-fonte);
+    padding:96px 24px 200px; background:var(--cx-navy); color:var(--cx-branco); font-family:var(--cx-fonte);
     -webkit-font-smoothing:antialiased;
   }
   .cx-prog *,.cx-prog *::before,.cx-prog *::after{box-sizing:border-box}
@@ -82,17 +82,22 @@
 
 
   /* chão em grade (perspectiva synthwave, animado) */
-  .cx-prog__chao{position:absolute; left:0; right:0; bottom:0; height:720px; z-index:-1; pointer-events:none; overflow:hidden;
-    perspective:1130px; perspective-origin:50% 14%; opacity:.5;
-    -webkit-mask-image:linear-gradient(transparent 0%,rgba(0,0,0,.25) 22%,rgba(0,0,0,.6) 45%,#000 70%,transparent 100%);
-            mask-image:linear-gradient(transparent 0%,rgba(0,0,0,.25) 22%,rgba(0,0,0,.6) 45%,#000 70%,transparent 100%)}
-  .cx-prog__chao::before{content:""; position:absolute; left:-300%; right:-300%; bottom:0; height:6000px;
-    transform-origin:50% 100%; transform:rotateX(90deg); will-change:transform; backface-visibility:hidden;
-    background-image:linear-gradient(rgba(0,100,253,.95) 3px,transparent 3px),linear-gradient(90deg,rgba(0,100,253,.95) 3px,transparent 3px);
-    background-size:210px 210px; background-position:center bottom; animation:cx-chao 10s linear infinite}
-  .cx-prog__chao::after{content:""; position:absolute; inset:0; background:radial-gradient(ellipse 60% 50% at 50% 30%,rgba(0,100,253,.2),transparent 70%)}
-  @keyframes cx-chao{from{transform:rotateX(90deg) translate3d(0,210px,0)}to{transform:rotateX(90deg) translate3d(0,0,0)}}
-  @keyframes cx-chao-m{from{transform:rotateX(90deg) translate3d(0,110px,0)}to{transform:rotateX(90deg) translate3d(0,0,0)}}
+  .cx-prog__parede{
+    position:absolute; bottom:0; height:100%; width:30%; z-index:-1; pointer-events:none;
+    background-image:
+      linear-gradient(rgba(0,100,253,.9) 1.5px,transparent 1.5px),
+      linear-gradient(90deg,rgba(0,100,253,.9) 1.5px,transparent 1.5px);
+    background-size:62px 62px; background-position:0 100%;
+    opacity:.6;
+    -webkit-mask-image:radial-gradient(ellipse 100% 75% at var(--cx-mx) 75%,#000 15%,transparent 75%),linear-gradient(0deg,transparent 4%,#000 18%,#000 45%,transparent 90%);
+    -webkit-mask-composite:source-in;
+            mask-image:radial-gradient(ellipse 100% 75% at var(--cx-mx) 75%,#000 15%,transparent 75%),linear-gradient(0deg,transparent 4%,#000 18%,#000 45%,transparent 90%);
+            mask-composite:intersect;
+    animation:cx-grade-sobe 14s linear infinite}
+  .cx-prog__parede--esq{left:0; --cx-mx:0%}
+  .cx-prog__parede--dir{right:0; --cx-mx:100%}
+  @keyframes cx-grade-sobe-m{from{background-position:0 100%}to{background-position:0 calc(100% - 36px)}}
+  @keyframes cx-grade-sobe{from{background-position:0 100%}to{background-position:0 calc(100% - 62px)}}
 
   /* card final */
   .cx-prog__final{position:relative; z-index:1; max-width:1090px; margin:78px auto 0; display:flex; align-items:center; justify-content:space-between; gap:28px;
@@ -148,9 +153,8 @@
   }
   /* Mobile */
   @media (max-width:767px){
-    .cx-prog{padding-bottom:180px !important}
-    .cx-prog__chao{height:420px; perspective:600px}
-    .cx-prog__chao::before{background-size:110px 110px; animation-name:cx-chao-m}
+    .cx-prog{padding-bottom:110px !important}
+    .cx-prog__parede{width:45%; height:60%; opacity:.35; background-size:36px 36px; animation-name:cx-grade-sobe-m}
     .cx-prog__final{flex-direction:column; text-align:center; gap:24px; margin-top:40px; padding:32px 18px; border-radius:18px}
     .cx-prog__final-titulo{font-size:clamp(20px,calc((100vw - 104px)/11.5),28px)}
     .cx-prog__final-titulo br{display:none}
@@ -177,7 +181,8 @@
 
 <section class="cx-prog" id="cx-prog" aria-labelledby="cx-prog-titulo">
   <div class="cx-prog__brilhos" aria-hidden="true"><span class="b1"></span><span class="b2"></span></div>
-  <div class="cx-prog__chao" aria-hidden="true"></div>
+  <div class="cx-prog__parede cx-prog__parede--esq" aria-hidden="true"></div>
+  <div class="cx-prog__parede cx-prog__parede--dir" aria-hidden="true"></div>
   <div class="cx-prog__ruido" aria-hidden="true"></div>
 
   <h2 class="cx-prog__titulo" id="cx-prog-titulo" data-cx-revela><span>Programação</span></h2>
