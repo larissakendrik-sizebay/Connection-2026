@@ -188,6 +188,12 @@ Inspiradas em camisetas ringer vintage (faixas anos 80, letreiro universitário,
 
 Costas: símbolo Audaces na nuca + assinatura AUDACES CONNECTION ▸ embaixo, em branco (D e E mantêm as costas do modelo original).
 
+### Emblemas retrô (página **Camiseta**, seção "Camisetas Retrô Emblemas")
+Seis emblemas vetoriais estilo collegiate/varsity para o ringer marinho, sem granulado, em 2 cores chapadas (branco gelo `#F5F5F9` + magenta `#F9039B`):
+01 Brasão com louros (AUDACES, símbolo, EST. 1992, faixa CONNECTION) · 02 CONNECTION + "35 Anos" em script · 03 "92" varsity com louros e faixa AUDACES · 04 Sol listrado + chão grid + EST. 1992 · 05 "35 Anos" varsity com louros · 06 Made in 1992 com globo wireframe.
+
+Fontes usadas só nessas peças, para chegar no visual de referência: **Graduate** (letreiro collegiate), **Kaushan Script** ("35 Anos") e Chakra Petch SemiBold (textos de apoio). Não fazem parte da identidade base; validar antes de usar fora das camisetas.
+
 ### Mockups de aplicação (imagens no arquivo)
 - Ícones neon pixel em tecido marinho
 - Cordão e crachá retrô-tech neon
