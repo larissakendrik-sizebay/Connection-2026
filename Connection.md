@@ -180,6 +180,7 @@ Inspiradas em camisetas ringer vintage (faixas anos 80, letreiro universitário,
 | **Retrô C · Emblema oval** | Raglan off-white + vivo azul | Oval com CONNECTION ▸ e filete vazados, "AUDACES · 2027" | 1 cor (azul) ou bordado |
 | **Retrô D · 35 anos** | Ringer marinho | "AUDACES · EST. 1992" em arco, "35" sobre faixas | 4 cores |
 | **Retrô E · Made in 1992** | Ringer marinho | "AUDACES CONNECTION" em arco, "MADE IN", "1992" sobre faixas, "35 ANOS · FLORIANÓPOLIS · SC" | 4 cores |
+| **Retrô F · Limited Edition 1992** | Ringer marinho | "LIMITED EDITION" em arco, "1992" condensado magenta com desgaste pesado, "– CONNECTION –", "AUDACES · 35 ANOS · 2027" | 3 cores |
 | **Retrô S1 · Evento** | Off-white + gola azul | AUDACES CONNECTION / 2027 / FLORIANÓPOLIS. | 1 cor (azul) |
 | **Retrô S2 · 35 anos** | Off-white + gola marinho | AUDACES CONNECTION / 1992 / 35 ANOS. | 1 cor (marinho) |
 | **Retrô S3 · Moda conecta** | Off-white + gola magenta | MODA + TECNOLOGIA / 2027 / CONECTA. | 1 cor (azul) |
