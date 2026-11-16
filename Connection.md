@@ -156,6 +156,20 @@ Estes elementos se repetem em todas as peças:
 | **BG - variações 3, 4, 5, 6, 8, 9** | 1080×1080 (quadrado, para redes) |
 | **Miniatura LP** | 1200×630 (thumbnail / Open Graph da landing page) |
 
+### Camisetas vintage (página **Camiseta**, seção "Camisetas Vintage · Propostas")
+Base: ringer marinho com gola e mangas brancas (`Camiseta Bicolor Azul 1`). Estampas pensadas para serigrafia: 3 a 4 cores chapadas, sem gradiente nem glow, desgaste em pixels já vazado na arte (a malha aparece pelos furos) e textos pequenos sem desgaste.
+
+| Proposta | Frente | Costas | Cores |
+|---|---|---|---|
+| **01 · Sunset 1991** | Mini sol + grid no peito | Logo, sol listrado sobre chão grid, "EST. 1991 · 35 ANOS" | Branco gelo, amarelo sunset `#FFD47A`, magenta, azul elétrico |
+| **02 · Varsity** | "AUDACES" em arco college + CONNECTION 2027 | "35" gigante com sombra magenta | Branco gelo, magenta, ciano |
+| **03 · World Tour** | Globo wireframe vazado atrás do logo | Lista de turnê: 1991 / 7 e 8 JAN 2027 | Branco gelo, ciano, magenta |
+| **04 · Mixtape Lado A/B** | Fita cassete pixel, "LADO A" | Capa de fita com player e faixas Lado A / Lado B | Branco gelo, magenta, ciano |
+| **05 · Selo 35 anos** | Selo de peito | Selo grande + "O FUTURO DA MODA CONECTA AQUI" + logo | Branco gelo, ciano, magenta |
+| **06 · Arcade Press Start** | Joystick + "PRESS START" | Barra LOADING + 6 ícones pixel + "INSERT COIN" | Branco gelo, magenta, ciano |
+
+Obs.: no ambiente usado para montar as camisetas a QB One não estava disponível; os textos de apoio usam Chakra Petch e o "2027" foi vetorizado a partir do logo.
+
 ### Mockups de aplicação (imagens no arquivo)
 - Ícones neon pixel em tecido marinho
 - Cordão e crachá retrô-tech neon
