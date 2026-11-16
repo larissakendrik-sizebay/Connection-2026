@@ -161,14 +161,30 @@ Base: ringer marinho com gola e mangas brancas (`Camiseta Bicolor Azul 1`). Esta
 
 | Proposta | Frente | Costas | Cores |
 |---|---|---|---|
-| **01 · Sunset 1991** | Mini sol + grid no peito | Logo, sol listrado sobre chão grid, "EST. 1991 · 35 ANOS" | Branco gelo, amarelo sunset `#FFD47A`, magenta, azul elétrico |
+| **01 · Sunset 1992** | Mini sol + grid no peito | Logo, sol listrado sobre chão grid, "EST. 1992 · 35 ANOS" | Branco gelo, amarelo sunset `#FFD47A`, magenta, azul elétrico |
 | **02 · Varsity** | "AUDACES" em arco college + CONNECTION 2027 | "35" gigante com sombra magenta | Branco gelo, magenta, ciano |
-| **03 · World Tour** | Globo wireframe vazado atrás do logo | Lista de turnê: 1991 / 7 e 8 JAN 2027 | Branco gelo, ciano, magenta |
+| **03 · World Tour** | Globo wireframe vazado atrás do logo | Lista de turnê: 1992 / 7 e 8 JAN 2027 | Branco gelo, ciano, magenta |
 | **04 · Mixtape Lado A/B** | Fita cassete pixel, "LADO A" | Capa de fita com player e faixas Lado A / Lado B | Branco gelo, magenta, ciano |
 | **05 · Selo 35 anos** | Selo de peito | Selo grande + "O FUTURO DA MODA CONECTA AQUI" + logo | Branco gelo, ciano, magenta |
 | **06 · Arcade Press Start** | Joystick + "PRESS START" | Barra LOADING + 6 ícones pixel + "INSERT COIN" | Branco gelo, magenta, ciano |
 
 Obs.: no ambiente usado para montar as camisetas a QB One não estava disponível; os textos de apoio usam Chakra Petch e o "2027" foi vetorizado a partir do logo.
+
+### Camisetas retrô collegiate (página **Camiseta**, seção "Camisetas Retrô Collegiate · Produção")
+Inspiradas em camisetas ringer vintage (faixas anos 80, letreiro universitário, emblema oval). Ano de fundação da Audaces: **1992** (35 anos em 2027).
+
+| Peça | Malha | Frente | Cores |
+|---|---|---|---|
+| **Retrô A · Faixas 2027** | Off-white + gola marinho | "2027" itálico, sol magenta, faixas ciano/azul/roxo/magenta, CONNECTION ▸ | 5 cores |
+| **Retrô B · Collegiate** | Off-white + gola azul | AUDACES CONNECTION em arco, pílula 2027 vazada, "CONECTA." | 1 cor (azul) |
+| **Retrô C · Emblema oval** | Raglan off-white + vivo azul | Oval com CONNECTION ▸ e filete vazados, "AUDACES · 2027" | 1 cor (azul) ou bordado |
+| **Retrô D · 35 anos** | Ringer marinho | "AUDACES · EST. 1992" em arco, "35" sobre faixas | 4 cores |
+| **Retrô S1 · Evento** | Off-white + gola azul | AUDACES CONNECTION / 2027 / FLORIANÓPOLIS. | 1 cor (azul) |
+| **Retrô S2 · 35 anos** | Off-white + gola marinho | AUDACES CONNECTION / 1992 / 35 ANOS. | 1 cor (marinho) |
+| **Retrô S3 · Moda conecta** | Off-white + gola magenta | MODA + TECNOLOGIA / 2027 / CONECTA. | 1 cor (azul) |
+| **Retrô S4 · Marinho** | Ringer marinho | Igual à S1, em branco | 1 cor (branco) |
+
+Costas das off-white: símbolo Audaces na nuca + assinatura AUDACES CONNECTION ▸ embaixo, na cor da estampa.
 
 ### Mockups de aplicação (imagens no arquivo)
 - Ícones neon pixel em tecido marinho
