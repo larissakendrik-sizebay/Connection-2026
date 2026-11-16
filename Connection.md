@@ -171,7 +171,7 @@ Base: ringer marinho com gola e mangas brancas (`Camiseta Bicolor Azul 1`). Esta
 Obs.: no ambiente usado para montar as camisetas a QB One não estava disponível; os textos de apoio usam Chakra Petch e o "2027" foi vetorizado a partir do logo.
 
 ### Camisetas retrô collegiate (página **Camiseta**, seção "Camisetas Retrô Collegiate · Produção")
-Inspiradas em camisetas ringer vintage (faixas anos 80, letreiro universitário, emblema oval). Ano de fundação da Audaces: **1992** (35 anos em 2027).
+Inspiradas em camisetas ringer vintage (faixas anos 80, letreiro universitário, emblema oval). **Todas no ringer marinho com gola branca** (foco da marca), com estampas recoloridas para fundo escuro. Ano de fundação da Audaces: **1992** (35 anos em 2027).
 
 | Peça | Malha | Frente | Cores |
 |---|---|---|---|
@@ -179,12 +179,13 @@ Inspiradas em camisetas ringer vintage (faixas anos 80, letreiro universitário,
 | **Retrô B · Collegiate** | Off-white + gola azul | AUDACES CONNECTION em arco, pílula 2027 vazada, "CONECTA." | 1 cor (azul) |
 | **Retrô C · Emblema oval** | Raglan off-white + vivo azul | Oval com CONNECTION ▸ e filete vazados, "AUDACES · 2027" | 1 cor (azul) ou bordado |
 | **Retrô D · 35 anos** | Ringer marinho | "AUDACES · EST. 1992" em arco, "35" sobre faixas | 4 cores |
+| **Retrô E · Made in 1992** | Ringer marinho | "AUDACES CONNECTION" em arco, "MADE IN", "1992" sobre faixas, "35 ANOS · FLORIANÓPOLIS · SC" | 4 cores |
 | **Retrô S1 · Evento** | Off-white + gola azul | AUDACES CONNECTION / 2027 / FLORIANÓPOLIS. | 1 cor (azul) |
 | **Retrô S2 · 35 anos** | Off-white + gola marinho | AUDACES CONNECTION / 1992 / 35 ANOS. | 1 cor (marinho) |
 | **Retrô S3 · Moda conecta** | Off-white + gola magenta | MODA + TECNOLOGIA / 2027 / CONECTA. | 1 cor (azul) |
 | **Retrô S4 · Marinho** | Ringer marinho | Igual à S1, em branco | 1 cor (branco) |
 
-Costas das off-white: símbolo Audaces na nuca + assinatura AUDACES CONNECTION ▸ embaixo, na cor da estampa.
+Costas: símbolo Audaces na nuca + assinatura AUDACES CONNECTION ▸ embaixo, em branco (D e E mantêm as costas do modelo original).
 
 ### Mockups de aplicação (imagens no arquivo)
 - Ícones neon pixel em tecido marinho
