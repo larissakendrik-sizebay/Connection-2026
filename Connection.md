@@ -199,7 +199,7 @@ Gerados em 06–08/11/2026 como apoio à identidade:
 
 Bloco HTML do RD Station, autocontido (fonte QB One embutida em base64). Figma: node `663:9540` (Landing page › Frame 26 › Frame 29).
 
-**Estado atual (17/11/2026):** a programação ainda não está definida. A LP usa a versão **"Em breve"**, em [`lp/bloco-03-em-breve.html`](lp/bloco-03-em-breve.html): mesmo visual do bloco, com card "EM BREVE MAIS INFORMAÇÕES" e barra "LOADING..." no lugar dos dias. O card final ("Nos vemos no Connection 2027!") e o botão foram mantidos.
+**Estado atual (17/11/2026):** a programação ainda não está definida. A LP usa a versão **"Em breve"**, em [`lp/bloco-03-em-breve.html`](lp/bloco-03-em-breve.html): mesmo visual do bloco, com duas colunas, Dia 01 (07 de janeiro) e Dia 02 (08 de janeiro), cada uma com "EM BREVE", "EM BREVE MAIS INFORMAÇÕES" e barra "LOADING..." no lugar da agenda. O card final ("Nos vemos no Connection 2027!") e o botão foram mantidos.
 
 **Quando a agenda sair:** cole no RD Station o HTML original abaixo e edite os horários. Cada atividade é um `<li class="cx-item">`, os intervalos usam `cx-item cx-item--pausa` e a descrição opcional vai em `<span class="cx-item__desc">`.
 
