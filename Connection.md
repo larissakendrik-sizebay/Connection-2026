@@ -37,6 +37,7 @@
 | **Gradiente da marca** (`Rectangle 3`) | `#00D3FD` 0% → `#0064FD` 28% → `#7727F0` 59% → `#F9039B` 100% |
 | Cromado do logo CONNECTION | `#F5F5F9` → `#9EC7FF` → `#3385FF` → `#FFFFFF` → `#4D94FF` → `#F7C7EB` → `#FA73C7` → `#F91AA3` |
 | Cromado dos ícones | `#F5F5F9` → `#0064FD` → `#FFFFFF` → `#F9039B` |
+| **Cromado dos ícones, versão fundo branco (impressão)** | `#00C2FA` 0% → `#0050E6` 36% → `#7727F0` 64% → `#F9039B` 100%. Os brancos do original viram ciano e roxo da marca para não sumirem no papel. Glow reduzido a `#0064FD` 30%, raio 3. Frame `Ícones - Pixel (fundo branco)`, ao lado de `Ícones - Pixel` |
 | "2027" magenta | `#FFC7ED` → `#FC73C7` → `#F90F9E` |
 | Pastel | `#F2FAFF` → `#B2D9FF` → `#FFBFFF` / `#66A8FF` → `#FA9EDB` |
 | Fundo profundo | `#063C91` → `#051A56` → `#090F2B` |
